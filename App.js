@@ -19,7 +19,7 @@ async function SetWrLabel() {
             RecordLabels[i].textContent = SpData[i];
         }
         else {
-            RecordLabels[i + SpData.length].textContent = CoopData[i - SpData.length];
+            RecordLabels[i].textContent = CoopData[i - SpData.length];
         }
     }
 }
