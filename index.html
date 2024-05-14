@@ -1,13 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Startsida</title>
+    <title>PortalDensity</title>
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="Style.css" type="text/css">
+    <script type="text/JavaScript" src="App.js"></script>
+
+    <script src="SpRecord.json"></script>
+    <script src="CoopRecord.json"></script>
 </head>
 <body>
-    <p>Oi</p>
+    <button onclick="GetTop5000()">Update</button>
+
+    <!-- Singleplayer -->
+    <ul>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+    </ul>
+
+    <!-- Coop -->
+    <ul>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+        <li><p class="WrLabel"></p><p class="Top5000Label"></p></li>
+    </ul>
 </body>
 </html>
