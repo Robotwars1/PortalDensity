@@ -39,6 +39,18 @@ li {
     color: white;
 }
 
+.MapLabel {
+    width: 40%;
+}
+
+.WrLabel {
+    width: 20%;
+}
+
+.Top5000Label {
+    width: 20%;
+}
+
 #SP {
     grid-column: 2;
 }
