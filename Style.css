@@ -1,13 +1,27 @@
-ul {
-    list-style: none;
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: #303030;
 }
 
-body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+ul {
+    list-style: none;
+    background-color: #424242;
 }
 
 li {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+}
+
+#SP {
+    grid-column: 2;
+}
+
+#Coop {
+    grid-column: 4;
 }
