@@ -9,6 +9,8 @@ body {
 ul {
     list-style: none;
     background-color: #424242;
+    margin: 0;
+    padding: 0;
 }
 
 li {
