@@ -6,6 +6,17 @@ body {
     background-color: #303030;
 }
 
+h1 {
+    color: white;
+    padding-left: 25px;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background-color: #424242;
+}
+
 .Spacer {
     grid-column-start: 1;
     grid-column-end: 6;
