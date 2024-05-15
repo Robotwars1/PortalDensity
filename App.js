@@ -8,8 +8,6 @@ const Coop5000 = [2, 7, 8, 4, 2, 0, 9, 6, 5, 4, 15, 11, 8, 12, 11, 8, 5, 12, 18,
 const RecordLabels = document.getElementsByClassName("WrLabel");
 const Top5000Labels = document.getElementsByClassName("Top5000Label");
 
-const ProxyUrl = 'https://cors-anywhere.herokuapp.com/';
-
 window.onload = async function() {
     UpdateLabels();
 }
