@@ -6,9 +6,17 @@ body {
     background-color: #303030;
 }
 
+.Spacer {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    height: 100px;
+}
+
 ul {
     list-style: none;
     background-color: #424242;
+    border-radius: 10px;
+    height: fit-content;
     margin: 0;
     padding: 0;
 }
