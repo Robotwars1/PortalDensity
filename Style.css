@@ -68,10 +68,11 @@ a {
 
 /* Use max-device-width to be ably to use viewport-size */
 /* Getting viewport from https://yesviz.com/viewport/ or https://www.mydevice.io/ */
-@media screen and (max-device-width: 360px) {
+@media screen and (max-device-width: 700px) {
     body {
         grid-template-columns: 1fr 6fr 1fr;
         row-gap: 100px;
+        text-size-adjust: none;
     }
 
     .Spacer {
@@ -83,7 +84,7 @@ a {
     }
 
     h1 {
-        font-size: 30pt;
+        font-size: 35pt;
     }
 
     h3 {
@@ -91,6 +92,10 @@ a {
     }
 
     p {
-        font-size: 20pt;
+        font-size: 25pt;
+    }
+
+    img {
+        height: 30pt;
     }
 }
