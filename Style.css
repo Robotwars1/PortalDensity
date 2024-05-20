@@ -52,6 +52,10 @@ header, footer {
     text-align: center;
 }
 
+.WrTie {
+    height: 20pt;
+}
+
 footer p {
     color: white;
     padding-left: 25px;
