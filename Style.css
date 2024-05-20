@@ -11,7 +11,7 @@ h1 {
     padding-left: 25px;
 }
 
-header {
+header, footer {
     grid-column-start: 1;
     grid-column-end: 6;
     background-color: #424242;
@@ -57,4 +57,13 @@ li {
 
 #Coop {
     grid-column: 4;
+}
+
+p {
+    color: white;
+    padding-left: 25px;
+}
+
+a {
+    color: lightblue;
 }
