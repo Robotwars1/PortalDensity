@@ -53,7 +53,7 @@ async function UpdateLabels() {
             SPWr.push(SpData[i]);
         }
         else {
-            RecordTieMarkers[i].textContent = `${CheckRecordTie(CoopData[i - SpData.length], Coop5000[i - SpData.length])}.png`;
+            RecordTieMarkers[i].src = `${CheckRecordTie(CoopData[i - SpData.length], Coop5000[i - SpData.length])}.png`;
             CoopWr.push(CoopData[i]);
         }
     }
