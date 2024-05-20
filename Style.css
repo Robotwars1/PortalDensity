@@ -67,3 +67,20 @@ p {
 a {
     color: lightblue;
 }
+
+/* Use max-device-width to be ably to use viewport-size */
+/* Getting viewport from https://yesviz.com/viewport/ or https://www.mydevice.io/ */
+@media screen and (max-device-width: 360px) {
+    body {
+        grid-template-columns: 1fr 2fr 1fr;
+        row-gap: 100px;
+    }
+
+    .Spacer {
+        display: none;
+    }
+
+    #Coop {
+        grid-column: 2;
+    }
+}
