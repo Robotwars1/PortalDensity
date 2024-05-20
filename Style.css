@@ -4,6 +4,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
     background-color: #303030;
+    color: white;
 }
 
 h1 {
@@ -23,32 +24,20 @@ header, footer {
     height: 100px;
 }
 
-ul {
-    list-style: none;
+#SP, #Coop {
+    display: grid;
+    grid-template-columns: 2fr auto auto;
+    column-gap: 20px;
     background-color: #424242;
     border-radius: 10px;
     height: fit-content;
-    margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
-li {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    color: white;
-}
-
-.MapLabel {
-    width: 40%;
-}
-
-.WrLabel {
-    width: 20%;
-}
-
-.Top5000Label {
-    width: 20%;
+#SP h1, #Coop h1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
 }
 
 #SP {
@@ -59,7 +48,11 @@ li {
     grid-column: 4;
 }
 
-p {
+.Top5000Label {
+    text-align: center;
+}
+
+footer p {
     color: white;
     padding-left: 25px;
 }
