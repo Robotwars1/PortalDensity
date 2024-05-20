@@ -49,7 +49,7 @@ async function UpdateLabels() {
 
     for (let i = 0; i < RecordTieMarkers.length; i++) {
         if (i < SpData.length) {
-            RecordTieMarkers[i].src = `${CheckRecordTie(SpData[i]), Sp5000[i]}.png`;
+            RecordTieMarkers[i].src = `${CheckRecordTie(SpData[i], Sp5000[i])}.png`;
             SPWr.push(SpData[i]);
         }
         else {
