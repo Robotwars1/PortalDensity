@@ -5,6 +5,7 @@ body {
     grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
     background-color: #303030;
     color: white;
+    row-gap: 100px;
 }
 
 h1 {
@@ -18,10 +19,15 @@ header, footer {
     background-color: #424242;
 }
 
-.Spacer {
-    grid-column-start: 1;
-    grid-column-end: 6;
-    height: 100px;
+#Disclaimer {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    background-color: #424242;
+    border-radius: 10px;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
 }
 
 #SP, #Coop {
@@ -71,12 +77,11 @@ a {
 @media screen and (max-device-width: 700px) {
     body {
         grid-template-columns: 1fr 6fr 1fr;
-        row-gap: 100px;
         text-size-adjust: none;
     }
 
-    .Spacer {
-        display: none;
+    #Disclaimer {
+        grid-column: 2;
     }
 
     #Coop {
