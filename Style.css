@@ -96,6 +96,6 @@ a {
     }
 
     img {
-        height: 30pt;
+        height: 30pt !important;
     }
 }
