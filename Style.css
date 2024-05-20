@@ -70,7 +70,7 @@ a {
 /* Getting viewport from https://yesviz.com/viewport/ or https://www.mydevice.io/ */
 @media screen and (max-device-width: 360px) {
     body {
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 6fr 1fr;
         row-gap: 100px;
     }
 
@@ -80,5 +80,17 @@ a {
 
     #Coop {
         grid-column: 2;
+    }
+
+    h1 {
+        font-size: 30pt;
+    }
+
+    h3 {
+        font-size: 30pt;
+    }
+
+    p {
+        font-size: 20pt;
     }
 }
