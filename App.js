@@ -52,12 +52,13 @@ async function UpdateLabels() {
         }
 
         // Top 5000
-        // If not RecordTie lower count by 1 to make it more likely that the shown number is what is actually required to get onto lp boards
+        // If not RecordTie lower count by 1 to make it more likely that the shown number is what is actually 
+        // required to get onto lp boards. OBS. Only does check of score is more than 2 portals for accuracy reasons
         if (i < Sp5000.length) {
             if (RecordTie) {
                 Top5000Labels[i].textContent = Sp5000[i];
             }
-            else {
+            else if (Sp5000[i] > 2) {
                 Top5000Labels[i].textContent = Sp5000[i] - 1;
             }
         }
@@ -65,7 +66,7 @@ async function UpdateLabels() {
             if (RecordTie) {
                 Top5000Labels[i].textContent = Coop5000[i - Sp5000.length];
             }
-            else {
+            else if (Coop5000[i - Sp5000.length] > 2) {
                 Top5000Labels[i].textContent = Coop5000[i - Sp5000.length] - 1;
             }
         }
